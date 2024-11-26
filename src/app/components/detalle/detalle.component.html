@@ -1,0 +1,43 @@
+@if (errorMessage) {
+<div class="alert alert-danger">
+    {{ errorMessage }}
+</div>
+}
+
+@if (cliente) {
+<h2>Cliente</h2>
+<table class="table table-hover">
+    <tbody>
+        <tr>
+            <th>Primer nombre</th>
+            <td>{{ cliente.primerNombre }}</td>
+        </tr>
+        <tr>
+            <th>Segundo nombre</th>
+            <td>{{ cliente.segundoNombre }}</td>
+        </tr>
+        <tr>
+            <th>Primer apellido</th>
+            <td>{{ cliente.primerApellido }}</td>
+        </tr>
+        <tr>
+            <th>Segundo apellido</th>
+            <td>{{ cliente.segundoApellido }}</td>
+        </tr>
+        <tr>
+            <th>Teléfono</th>
+            <td>{{ cliente.telefono }}</td>
+        </tr>
+        <tr>
+            <th>Dirección</th>
+            <td>{{ cliente.direccion }}</td>
+        </tr>
+        <tr>
+            <th>Ciudad de residencia</th>
+            <td>{{ cliente.ciudad }}</td>
+        </tr>
+    </tbody>
+</table>
+}
+
+<button type="button" routerLink="/" class="btn btn-outline-primary me-2">Volver</button>

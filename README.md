@@ -1,27 +1,32 @@
-# PruebaTecnicaFront
+# Prueba técnica frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Aplicación Angular que permite a un usuario buscar clientes por su tipo y número de documento. Se consume el servicio REST de la API una vez esta última esté corriendo (corre en el puerto 8080).
 
-## Development server
+### Prerrequisitos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Tener instalado [Node](https://nodejs.org/en/) y ejecutar los siguientes comandos cuando termine la instalación para verificar
 
-## Code scaffolding
+```shell
+node --version
+npm --version
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clonar el repositorio
 
-## Build
+```shell
+git clone https://github.com/dangello-g/prueba-tecnica-front.git
+cd prueba-tecnica-front/
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Instalar Angular de forma local
 
-## Running unit tests
+```shell
+npm install --save-dev @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalar las dependencias y correr la aplicación
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```shell
+npm install
+ng serve --open
+```
